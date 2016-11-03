@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @friend.name %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @friend.number %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @friend.address %>
+</p>
+
+<%= link_to 'Edit', edit_friend_path(@friend), class: 'ui secondary button' %> |
+<%= link_to 'Back', friends_path, class: 'ui secondary button' %>
